@@ -1,0 +1,22 @@
+{
+  "name": "devtalles_curso",
+  "version": "0.0.1",
+  "description": "Inicio de desarrollo con node",
+  "main": "index.js",
+  "scripts": {
+    "test": "dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alaneduardo70/curso_node.git"
+  },
+  "keywords": [
+    "introduccion_node"
+  ],
+  "author": "alan eduardo grijalva ibarra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alaneduardo70/curso_node/issues"
+  },
+  "homepage": "https://github.com/alaneduardo70/curso_node#readme"
+}
