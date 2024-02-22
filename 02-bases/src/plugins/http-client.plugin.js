@@ -1,11 +1,17 @@
+const axios = require('axios');
+
 const httpClientPlugin = {
 
     get: async (url) => {
-        const resp = await fetch(url);
-        return await resp.json();
+        try {
+            const { data } = await axios.get(url);
+            return data;
+        } catch {
+            throw new Error(`Error al consultar ${url}`);
+        }
     },
     post: async url => {
-
+        
     }
 }
 
