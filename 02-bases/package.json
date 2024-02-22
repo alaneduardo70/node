@@ -2,9 +2,9 @@
   "name": "devtalles_curso",
   "version": "0.0.1",
   "description": "Inicio de desarrollo con node",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "dev"
+    "dev": "nodemon src/app.js"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,14 @@
   "bugs": {
     "url": "https://github.com/alaneduardo70/curso_node/issues"
   },
-  "homepage": "https://github.com/alaneduardo70/curso_node#readme"
+  "homepage": "https://github.com/alaneduardo70/curso_node#readme",
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  },
+  "dependencies": {
+    "axios": "^1.6.7",
+    "get-age": "^1.0.1",
+    "uuid": "^9.0.1",
+    "winston": "^3.11.0"
+  }
 }

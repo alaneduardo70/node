@@ -18,9 +18,16 @@
 //     console.log({error, user});
 // });
 // console.log(emailTemplate);
-const { getUUID, getAge, http } = require('./plugins');
-const { getPokenId } = require('./js-foundation/06-promises');
-const pokemon = getPokenId(1, http);
-pokemon
-    .then(pokemon => { console.log({ pokemon }); })
-    .catch( err => { console.log({err}) });
+
+
+// const { getUUID, getAge, http } = require('./plugins');
+// const { getPokenId } = require('./js-foundation/06-promises');
+// const pokemon = getPokenId(1, http);
+// pokemon
+//     .then(pokemon => { console.log({ pokemon }); })
+//     .catch( err => { console.log({err}) });
+
+const { buildLogger } = require('./plugins');
+
+const logger = buildLogger('app.js');
+logger.log('test de logeo desde buildlogger');
